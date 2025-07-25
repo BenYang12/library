@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>📚 My Library</h1>
+        <button id = "new-book-btn"> + New Book</button>
+    </header>
+
+    <main>
+        <!--Book Display-->
+        <section class="library" id = "library"></section>
+
+        <!--Book form (Hide from user by default)-->
+        <section id = "book-form-container" class ="hidden">
+            <form id = "book-form">
+                <h2>Add a New Book</h2>
+                <label for="title">Title</label>
+                <input type="text" name = "title" placeholder = "e.g. The Hunger Games" required>
+
+                <label for="author">Author</label>
+                <input type="text" name = "author" placeholder = "e.g. Suzanne Collins" required>
+
+                <label for="pages">Pages</label>
+                <input type="number" name = "pages" placeHolder = "e.g. 374" required>
+
+                <label for = "read" >
+                    <input type="checkbox" name = "read" id = "read" >
+                    Already Read
+                </label>
+
+                <div class="form-buttons">
+                    <button type = "submit">Add Book</button>
+                    <button type = "button" id = "close-form">Cancel</button>
+                </div>
+
+                
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+</body>
+</html>
